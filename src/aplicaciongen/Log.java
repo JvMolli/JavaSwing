@@ -123,7 +123,7 @@ public class Log extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if (jTextFieldUser.getText().equalsIgnoreCase("Pepito") && jTextFieldPass.getText().equalsIgnoreCase("1234")) {
+        if (jTextFieldUser.getText().equalsIgnoreCase("Jaime") && jTextFieldPass.getText().equalsIgnoreCase("1234")) {
             Main m = new Main();
             m.setVisible(true);
             m.setSize(1200, 900);
