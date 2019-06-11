@@ -6,9 +6,9 @@
 - [Instalación](#instalación)
 - [Despliegue](#despliegue)
 - [Explicación](#explicación)
-- [APIs](#apis)
+- [Clases](#apis)
 - [Presentación](#presentación)
-- [Enlaces de interés](#enlaces-de-interés)
+- [Enlaces y agradecimientos](#enlaces-de-interés)
 
 ---
 
