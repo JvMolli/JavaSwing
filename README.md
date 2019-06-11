@@ -4,9 +4,8 @@
 
 - [Que es Java swing](#introducción)
 - [Instalación](#instalación)
-- [Despliegue](#despliegue)
 - [Explicación](#explicación)
-- [Clases](#apis)
+- [Clases](#clases)
 - [Presentación](#presentación)
 - [Enlaces y agradecimientos](#enlaces-de-interés)
 
