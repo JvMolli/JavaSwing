@@ -120,10 +120,10 @@ Grphics2D.drawString es una funcion para pintar encima de un canvas cadenas de t
 
 
 
-- <a href="https://www.oracle.com/es/index.html">Web de Next</a>
-- <a href="https://netbeans.org/">github</a>
-- <a href="https://docs.oracle.com/javase/tutorial/2d/index.html">ejemplos prácticos</a>
-- <a href="https://docs.oracle.com/javase/8/javafx/get-started-tutorial/hello_world.htm">Documentación</a>
+- <a href="https://www.oracle.com/es/index.html">Web de Oracle</a>
+- <a href="https://netbeans.org/">NetBeans</a>
+- <a href="https://docs.oracle.com/javase/tutorial/2d/index.html">ejemplos prácticos Java2D</a>
+- <a href="https://docs.oracle.com/javase/8/javafx/get-started-tutorial/hello_world.htm">ejemplo FX</a>
 
 
 ### Fuentes principales y Agradecimientos
