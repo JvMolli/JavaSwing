@@ -131,6 +131,7 @@ Grphics2D.drawString es una funcion para pintar encima de un canvas cadenas de t
 - **YouTube**
 - **Alexander Huacon**
 - **Oracle**
+- **Andres Herrero Fragoso**
 
 
 Podra encontrar mas informacion en la documentacion que dejo en el enlace
