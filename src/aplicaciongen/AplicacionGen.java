@@ -5,6 +5,11 @@
  */
 package aplicaciongen;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.Window;
+import java.lang.reflect.Method;
+import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UIManager;
@@ -32,10 +37,11 @@ public class AplicacionGen {
 //        }
 
         Log l = new Log();
+
         l.setVisible(true);
         l.setLocation(400, 200);
         l.setSize(400, 300);
-       
+
     }
-    
+
 }

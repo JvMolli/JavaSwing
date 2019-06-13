@@ -5,6 +5,11 @@
  */
 package aplicaciongen;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.Window;
+import java.lang.reflect.Method;
+import java.net.URL;
 import javax.swing.JOptionPane;
 
 /**
@@ -125,8 +130,38 @@ public class Log extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (jTextFieldUser.getText().equalsIgnoreCase("Jaime") && jTextFieldPass.getText().equalsIgnoreCase("1234")) {
             Main m = new Main();
+
+            try {
+                Class util = Class.forName("com.apple.eawt.Application");
+
+                for (int i = 0; i < util.getMethods().length; i++) {
+                    System.out.println("" + util.getMethods()[i]);
+                }
+                Method getApplication = util.getMethod("getApplication", new Class[0]);
+                Object application = getApplication.invoke(util);
+                Class params[] = new Class[1];
+                params[0] = Image.class;
+            Method setDockIconImage = util.getMethod("setDockIconImage", params);
+            URL url = m.getClass().getResource("/iconos/surtich.jpeg");
+            Image image = Toolkit.getDefaultToolkit().getImage(url);
+            setDockIconImage.invoke(application, image);
+
+                //notificaciones
+                params[0] = String.class;
+                Method setDockIconBadge = util.getMethod("setDockIconBadge", params);
+                setDockIconBadge.invoke(application, "Pepetter");
+
+                //activamos fullscreen
+                util = Class.forName("com.apple.eawt.FullScreenUtilities");
+                params = new Class[]{Window.class, Boolean.TYPE};
+                Method setWindowCanFullScreen = util.getMethod("setWindowCanFullScreen", params);
+                setWindowCanFullScreen.invoke(util, m, true);
+            } catch (Exception e) {
+            }
             m.setVisible(true);
             m.setSize(1200, 900);
+            m.setLocationRelativeTo(this);
+            this.setVisible(false);
         } else {
             JOptionPane.showMessageDialog(this, "Usuario o Contraseña incorrecta", "Error", JOptionPane.ERROR_MESSAGE);
         }
